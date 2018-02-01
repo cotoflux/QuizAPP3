@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="¿Qué perro es de pelo duro?"
+            android:textAppearance="?android:textAppearanceMedium"
+           />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/cocker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cocker" />
+
+        <RadioButton
+            android:id="@+id/caniche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Caniche" />
+
+        <RadioButton
+            android:id="@+id/schnawzer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schnawzer" />
+
+        <RadioButton
+            android:id="@+id/maltes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maltes" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estás de acuerdo con la afirmación: No pasa nada por cortar el pelo muy corto a un perro"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+
+        <CheckBox
+            android:id="@+id/afirmacionSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Si" />
+
+        <CheckBox
+            android:id="@+id/afirmacionNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Voy regularmente a competir en Concursos Nacionales de Peluquería"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+        <ToggleButton
+            android:id="@+id/campeonato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="No"
+            android:textOn="Sí"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="El pelo del caniche está compuesto de,..."
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/peloduro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pelo duro y primario fundamentalmente" />
+
+        <RadioButton
+            android:id="@+id/primario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pelo primario y secundario" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estas de acuerdo con la afirmación: todos los perros se cortan igual! "
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/igualSi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/igualNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Escribe tu nombre"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre y apellidos" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:text="COMPROBAR RESPUESTAS"/>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
